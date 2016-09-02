@@ -5,21 +5,6 @@ You need to pass your EC2 credentials when launching the container as environmen
 
 ## Container execution
 
-    docker service create --mode global --name rexray -e  basi/rexray
-
-## Sample config file
-
-```
-rexray:
-  storageDrivers:
-  - ec2
-aws:
-  accessKey: ${AWS_ACCESS_KEY_ID}
-  secretKey: ${AWS_SECRET_ACCESS_KEY}
-```
-
-## Run
-
 For run this container you need to mount some sockets needed for service to run.
 
 ```
