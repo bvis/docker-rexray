@@ -16,7 +16,7 @@ docker run \
   -v /var/lib/rexray:/var/lib/rexray \
   -v /var/run/rexray:/var/run/rexray \
   -v /dev:/dev \
-  basi/rexray-ec2
+  basi/rexray
 ```
 
 In case you have a Swarm cluster you can run it as a global service: 
@@ -30,5 +30,5 @@ docker service create \
   --mount type=bind,src=/run/docker/plugins,dst=/run/docker/plugins \
   --mount type=bind,src=/var/lib/rexray,dst=/var/lib/rexray \
   --mount type=bind,src=/dev,dst=/dev \
-  basi/rexray-ec2
+  basi/rexray
 ```
